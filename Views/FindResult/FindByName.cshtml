@@ -1,0 +1,49 @@
+﻿@model IEnumerable<Trip>
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!doctype html>
+
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="~/css/stylesheet4.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+
+      <table class="table table-bordered table-striped style="width:100%>
+          <thead>
+              <tr>
+                  <th>Trip Name</th>
+                  <th>The number of people available</th>
+              </tr>
+          </thead>
+          <tbody>
+            @foreach(var obj in Model)
+            {
+                <tr>
+                    <td width:"50%"> 
+                        @obj.trip_name
+                    </td>
+                    <td width:"50%"> 
+                        @obj.joins_no
+                    </td>
+                </tr>
+            }
+        </tbody>
+      </table>
+      
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  </body>
+</html>
+

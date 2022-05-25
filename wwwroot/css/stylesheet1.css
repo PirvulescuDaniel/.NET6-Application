@@ -1,0 +1,40 @@
+﻿body {
+    padding: 0px;
+    margin: 0px;
+}
+
+#big {
+    height: 300px;
+    padding: 0px;
+    margin: 0px;
+    border:0px;
+}
+
+#type-effect {
+    font-size: 70px;
+    color: #4db8ff;
+}
+
+.presentation {
+    margin-top: 5%;
+    font-size: 45px;
+}
+
+.presentationImg {
+    width: 40%;
+    height: 60%;
+    margin-top: 10%;
+    margin-left: 15%;
+}
+
+.row {
+    margin-top: 0px;
+    height: 250px;
+    border-top: solid;
+    border-width: 1px;
+    transition: 0.6s;
+}
+
+.row:hover {
+    background-color: #b3d9ff;
+ }

@@ -1,0 +1,58 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!doctype html>
+
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="~/css/stylesheet4.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+
+      <div class="principalDiv">
+
+          <div class="photo"></div>
+
+          <h1 style="margin-left: 220px; margin-top: 40px; position: absolute; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 50px;">Find a trip!</h1>
+
+          <div style="width: 600px; height: 300px; border-width: 1px; border-top: solid; border-bottom: solid; margin-left: 200px; position:absolute; margin-top:100px;">
+
+              <form method="post" action="FindResult/FindByName" >
+                  <label style = "font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 30px; margin-top:10px;">Find a trip by name:</label><br>
+                  <input name="tripName" type="text" style = "width: 60%; height: 30px;">
+                  <input style ="background-color: #1F79FD; color: white; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; width:130px; height:60px; border-radius: 10%; position: absolute; margin-left: 20px; margin-top: -25px; " type="submit" value="FIND!">
+              </form>
+
+              <h1 style="margin-left: 250px; margin-top: 25px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 45px;">OR</h1>
+
+              <div class="d-grid gap-2">
+                  <a asp-controller="FindResult" asp-action="Index" class="btn btn-lg btn-primary" type="button">Browse all Trips</a>
+              </div>
+
+          </div>
+
+          <h1 style="position: absolute; margin-left: 450px; margin-top: 425px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 45px;">OR</h1>
+          <h1 style="position: absolute; margin-left: 308px; margin-top: 500px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 45px;">Create a new Ride!</h1>
+          <h1 style="color: #8c8c8c; position: absolute; margin-left: 400px; margin-top: 550px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-size: 20px;">(*Just for members)</h1>
+
+
+          <div style=" width: 600px; height:300px; margin-left:200px; margin-top:600px; position: absolute; border-width: 1px; border-top:solid;">
+              <a asp-controller="Finder" asp-action="Create" style="width: 400px; height: 80px; margin-left: 100px; margin-top: 30px;" type="button" class="btn btn-success">CREATE A RIDE!</a>
+          </div>
+
+      </div>
+ 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+  </body>
+</html>
+

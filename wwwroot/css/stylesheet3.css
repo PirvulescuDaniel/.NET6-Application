@@ -1,0 +1,71 @@
+﻿body {
+
+}
+
+.principalDiv1{
+    height: 1200px;
+}
+
+.secondaryDiv1 {
+    width: 700px;
+    height: 400px;
+    z-index: 1;
+    position: absolute;
+    margin-left: -50px;
+    margin-top: 50px;
+    background-image: url(/Resources/SUV.jpg);
+    background-size: cover;
+}
+
+.secondaryDiv2 {
+    width: 750px;
+    height: 400px;
+    z-index: 2;
+    position: absolute;
+    margin-left: 600px;
+    margin-top: 400px;
+    background-image: url(/Resources/501.jpg);
+    background-size: cover;
+}
+
+.secondaryDiv3 {
+    width: 800px;
+    height: 400px;
+    z-index: 3;
+    position: absolute;
+    margin-left: -150px;
+    margin-top: 750px;
+    background-image: url(/Resources/electric.jpg);
+    background-size: cover;
+}
+
+.textDiv1 {
+    width: 700px;
+    height: 400px;
+    z-index: 1;
+    position: absolute;
+    margin-left: 680px;
+    margin-top: 50px;
+}
+
+.textDiv2 {
+    width: 700px;
+    height: 400px;
+    z-index: 1;
+    position: absolute;
+    margin-left: 0px;
+    margin-top: 500px;
+}
+
+.textDiv3 {
+    width: 700px;
+    height: 400px;
+    z-index: 1;
+    position: absolute;
+    margin-left: 680px;
+    margin-top: 850px;
+}
+
+p,h1 {
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}

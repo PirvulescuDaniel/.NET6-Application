@@ -1,0 +1,28 @@
+﻿@model Trip
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<form method = "post">
+    <div class="border-p3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary">Create a ride!</h2>
+        </div>
+    </div>
+    <div class="mb-3">
+        <label>Trip Name:</label>
+        <input asp-for="trip_name" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>Number of people:</label>
+        <input asp-for="people_no" class="form-control" />
+    </div>
+    <div class="mb-3">
+        <label>Number of people you want to join::</label>
+        <input asp-for="joins_no" class="form-control" />
+    </div>
+    <button type="submit" class="btn btn-primary" style="width:150px;">Create!</button>
+    <a asp-controller="Finder" asp-action="Index" class="btn btn-secondary" style="width:150px;">Go back</a>
+</form>
+

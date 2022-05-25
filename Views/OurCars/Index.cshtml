@@ -1,0 +1,98 @@
+﻿@model IEnumerable<Car>
+@{
+    ViewData["Title"] = "Index";
+}
+
+<!doctype html>
+
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="~/css/stylesheet3.css">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+  </head>
+
+  <body>
+
+      <div class="principalDiv1">
+
+          <div class="secondaryDiv1"></div>
+
+          <div class="secondaryDiv2"></div>
+
+          <div class="secondaryDiv3"></div>
+
+          <div class="textDiv1">
+              <h1 style="font-size: 80px;">SUV</h1>
+              <p style="font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum ut mi vitae pulvinar. Vestibulum dapibus, purus at sodales aliquam, turpis nibh rutrum leo, at blandit sapien ex at libero. Donec convallis vehicula orci, vitae ultricies dui congue vel. Integer aliquet lacus orci, nec aliquam eros ultrices id. Quisque eu leo non purus cursus dignissim in sit amet nisi.</p>
+          </div>
+
+          <div class="textDiv2">
+              <h1 style="font-size: 50px;">Small Cars: perfect for city</h1>
+              <p style="font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum ut mi vitae pulvinar. Vestibulum dapibus, purus at sodales aliquam, turpis nibh rutrum leo.</p>
+          </div>
+
+          <div class="textDiv3">
+              <h1 style="font-size: 80px;">GO ELECTRIC!</h1>
+              <p style="font-size: 20px;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque interdum ut mi vitae pulvinar. Vestibulum dapibus, purus at sodales aliquam, turpis nibh rutrum leo, at blandit sapien ex at libero. Donec convallis vehicula orci, vitae ultricies dui congue vel.</p>
+          </div>
+
+      </div>
+
+      <div class="container">
+          <p style="text-align:center; font-size:48px; font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;">A list of our cars:</p>
+      </div>
+
+      <table class="table table-bordered table-striped" style="width:100%;">
+
+          <thead>
+              <tr>
+                  <th>
+                      Brand
+                  </th>
+                  <th>
+                      Model
+                  </th>
+                  <th>
+                      Engine Capacity
+                  </th>
+                  <th>
+                      Year
+                  </th>
+                  <th>
+                      Price/1 day
+                  </th>
+              </tr>
+          </thead>
+          <tbody>
+            @foreach(var obj in Model)
+            {
+                <tr>
+                    <td>
+                        @obj.Brand
+                    </td>
+                    <td>
+                        @obj.Model
+                    </td>
+                    <td>
+                        @obj.engineCapacity
+                    </td>
+                    <td>
+                        @obj.Year
+                    </td>
+                    <td>
+                        @obj.pricePerDay
+                    </td>
+                </tr>
+            }
+        </tbody>
+      </table>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+  </body>
+</html>

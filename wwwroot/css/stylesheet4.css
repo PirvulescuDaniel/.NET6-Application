@@ -1,0 +1,45 @@
+﻿body {
+
+}
+
+.principalDiv {
+    margin: auto;
+    height: 1000px;
+    width: 900px;
+    border-left: solid;
+    border-right: solid;
+    border-width: 2px;
+    margin-top: 30px;
+}
+
+.photo {
+    width: 260px;
+    height: 800px;
+    background-color: grey;
+    z-index: 1;
+    margin-top: 75px;
+    border: solid;
+    border-width: 2px;
+    margin-left: -130px;
+    background-image: url(/Resources/find.jpg);
+    background-size: cover;
+    position:absolute;
+}
+
+#or {
+    z-index: 3;
+    font-size: 40px;
+    margin-left: 480px;
+    margin-top: 260px;
+}
+
+.create {
+    width: 600px;
+    height: 300px;
+    margin-left:230px;
+    margin-top: 30px;
+    z-index: 2;
+    border-top: solid;
+    border-bottom: solid;
+    border-width: 1px;
+}
